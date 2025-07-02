@@ -33,5 +33,5 @@
 
 #game_cards_grid {
     display: grid;
-    
+    grid-column: auto;
 }
