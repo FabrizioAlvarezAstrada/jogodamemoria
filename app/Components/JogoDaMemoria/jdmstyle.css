@@ -1,0 +1,37 @@
+.game_card_hidden {
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 75px;
+}
+
+.game_card_visible {
+    background-color: cornsilk;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 75px;
+}
+
+.game_card_pair {
+    background-color: burlywood;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 75px;
+}
+
+#game_cards_grid {
+    display: grid;
+    
+}
