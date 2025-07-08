@@ -9,7 +9,9 @@ export default function Home() {
       </section>
       <br />
       <br />
-      <JogoDaMemoria />
+      <JogoDaMemoria
+        Cartas={["Carta1", "Carta2", "Carta3", "Carta4", "Carta5"]}
+      />
     </section>
   );
 }

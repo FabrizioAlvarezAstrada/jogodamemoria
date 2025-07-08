@@ -1,37 +1,89 @@
 .game_card_hidden {
-    background-color: aliceblue;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100px;
-    width: 75px;
+    color: #5983a8;
 }
 
 .game_card_visible {
-    background-color: cornsilk;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100px;
-    width: 75px;
+    color: #4a6d8b;
 }
 
 .game_card_pair {
-    background-color: burlywood;
+    color: #9bde87;
+}
 
+.game_card_won {
+    color: #ddde87;
+}
+
+.game_button {
+    background-color: #f0f8ff;
+
+    width: 80%;
+    height: 25px;
+
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 500;
+
+    display: flex;
+
+    margin: 1px;
+    align-items: center;
+    justify-content: center;
+
+    transition: 200ms;
+}
+
+.game_button:hover {
+    background-color: #c1c7cc;
+}
+
+.game_button:active {
+    padding: 16px;
+}
+
+#game_section {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 400px;
+    width: 100%;
+}
+
+#game_card {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    border-radius: 10px;
+    margin: 5px auto 5px auto;
+
     height: 100px;
     width: 75px;
+    background-color: #f0f8ff;
+    border: solid 3px;
+
+    transition: 200ms;
 }
 
-#game_cards_grid {
+#game_card:hover {
+    background-color: #c1c7cc;
+}
+
+#card_button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: inherit;
+}
+
+.game_cards_grid {
     display: grid;
-    grid-column: auto;
+
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+
+    justify-items: center;
+    align-items: center;
 }
