@@ -23,6 +23,7 @@
   margin: 0px;
   border: none;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -35,6 +36,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#game_section {
+  height: 330px;
+  width: 100%;
+  border: solid 4px #002750;
 }
 
 #main_content {

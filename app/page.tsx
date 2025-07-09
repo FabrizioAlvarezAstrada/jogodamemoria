@@ -5,12 +5,14 @@ export default function Home() {
     <section id="main_content">
       <section id="welcome_content">
         <h1 id="welcome_title">TESTE DE JOGO DA MEMORIA</h1>
-        <p id="welcome_subtitle">o jogo da memoria abaixo é um componente, todo o resto e feito no page, divirta-se :)</p>
+        <p id="welcome_subtitle">o jogo da memoria abaixo é um componente (border azul escuro).</p>
+        <p id="welcome_subsubtitle">divirta-se :)</p>
       </section>
       <br />
-      <br />
       <JogoDaMemoria
-        Cartas={["Carta1", "Carta2", "Carta3", "Carta4", "Carta5"]}
+        Cards={["Cavalo", "Pombo", "Cachorro", "Gato", "Capivara"]}
+        Images = {"./Images/JogoDaMemoria1"} //nome das imagens devem coresponder a um dos items a cima, se não usara um placeholder padrão.
+        //images deve referências um folder com imagens jpg.
       />
     </section>
   );

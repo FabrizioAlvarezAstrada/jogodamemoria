@@ -20,7 +20,6 @@
     width: 80%;
     height: 25px;
 
-    font-family: 'Nunito';
     font-size: 18px;
     font-weight: 500;
 
@@ -41,23 +40,54 @@
     padding: 16px;
 }
 
+.game_cards_grid {
+    display: grid;
+
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.game_win_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 200ms;
+
+    margin: 5px;
+}
+
+.game_card_image {
+    height: 90%;
+    width: 90%;
+
+    margin-top: 5%;
+    margin-left: 5%;
+
+    border-radius: 10px;
+}
+
 #game_section {
     display: flex;
     flex-direction: column;
+    overflow: scroll;
 
     align-items: center;
-
-    height: 400px;
-    width: 100%;
+    font-family: 'Nunito';
+    font-weight: 700;
 }
 
 #game_card {
-    display: flex;
+    display:inline;
     justify-content: center;
     align-items: center;
 
     border-radius: 10px;
-    margin: 5px auto 5px auto;
+    margin: 5px;
 
     height: 100px;
     width: 75px;
@@ -74,16 +104,34 @@
 #card_button {
     height: 100%;
     width: 100%;
+
+    position: fixed;
+
     background-color: transparent;
     border-radius: inherit;
 }
 
-.game_cards_grid {
-    display: grid;
+#not_visible {
+    height: 0px;
+    color: transparent;
+}
 
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    grid-template-rows: auto;
+#visible {
+    height: 200px;
+    color: white;
+}
 
-    justify-items: center;
-    align-items: center;
+#game_win_title {
+    height: calc(100%/3);
+    color: inherit;
+}
+
+#game_win_tries {
+    height: calc(100%/3);
+    color: inherit;
+}
+
+#game_win_precision {
+    height: calc(100%/3);
+    color: inherit;
 }
